@@ -1,0 +1,15 @@
+Algoritmos divide y venceras
+
+Partir un problema de tamaño N, el cual dividiremos en trozos cada
+vez más pequeños hasta llegar al caso base. Hatsa resolver todo el
+problema.
+
+Normalmente se implementan con dos llamadas recursivas, cada una
+con un tamaño menor, generalmente la mitad.
+
+Consta de dos partes:
+	Dividir recursivamente el problema original en subprogramas
+	cada vez mas pequeños.
+	
+	Resolver el problema dando la solución a los subproblemas
+	a partir del caso base.

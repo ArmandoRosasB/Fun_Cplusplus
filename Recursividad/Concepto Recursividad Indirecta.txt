@@ -1,0 +1,2 @@
+La recursividad indirecta se produce cuando una funcion llama a otra,
+que eventualmente terminará llamando de nuevo a la primera función.

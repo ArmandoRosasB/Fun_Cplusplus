@@ -1,0 +1,54 @@
+Método de ordenamiento mas sencillo pero no tan eficiente
+
+Funciona revisando cada elemento de la lista que va a ser ordenada con el siguiente, intercambiándolos de posición si están en el orden equivocado. 
+
+Revisa varias veces la lista hasta que no se necesiten mas intercambios.
+
+Va a poner los numeros más pequeños al principio del arreglo. 
+
+Ejemplo:
+
+Array [] = {4*, 5**, 2, 1, 3};
+
+Numero actual *
+Numero siguiente **
+
+Si
+    numeroActual > numeroSiguiente
+     Hacemos un cambio
+     
+Como no es mayor, avanzamos
+
+Array [] = {4, 5*, 2**, 1, 3};
+
+Como si es mayor, intercambiamos ambos numeros y avanzamos
+
+Array [] = {4, 2, 5*, 1**, 3}
+
+Array [] = {4, 2, 1, 5*, 3**}
+
+Regresamos al inicio y continuamos el proceso
+
+Array [] = {4*, 2**, 1, 3, 5}
+
+Array [] = {2, 4*, 1**, 3, 5}
+
+Array [] = {2, 1, 4*, 3**, 5}
+
+Array [] = {2, 1, 3, 4*, 5**}
+
+Regresamso al inicio 
+
+Array [] = {2*, 1**, 3, 4, 5}
+
+Array [] = {1, 2*, 3**, 4, 5} -> Lista ordenada
+
+
+
+
+
+
+
+
+
+

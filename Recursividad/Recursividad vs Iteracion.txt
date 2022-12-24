@@ -1,0 +1,16 @@
+Directrices en la toma de decisión iteración/recursión
+
+Considerese una solución recursiva cuando una solución iterativa sencilla
+no sea posible.
+
+Utilice una solución recursiva solo cuando la ejecución y eficiencia de
+la solución este dentro de los limites aceptables cosiderando las 
+limitaciones del sistema.
+
+Si son posibles las dos soluciones, la solución recusriva siempre 
+requerirá más tiempo y espacio debido a las llamadas adicionales
+a las funciones.
+
+En *ciertos* problemas donde la solución recursiva es la mas entendible
+y facil de leer, en estos casos, la claridad de la solución suele 
+compensar el coste extra. 

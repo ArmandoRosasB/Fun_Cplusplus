@@ -1,0 +1,38 @@
+Concepto de pila
+
+Estructura de datos de entradas ordenadas tales que solo se pueden introducir y eliminar pr un extremo llamado cima.
+
+***El utlimo en entrar es el primero en salir***
+
+Operaciones usuales en la pila son Insertar y Quitar
+
+Insertar(push): Añade un elemento en la cima de la pila.
+Quitar(pop): Elimina o saca un elemento de la cima.
+
+   dato               dato              dato
+             -->               -->
+*siguiente        *siguiente         *siguiente
+
+
+Una pila son varios nodos, cada nodo contiene un dato y un puntero que apunta al siguiente dato.
+
+Declaracion de un nodo en C++
+
+
+struct Nodo{
+    int dato;
+    Nodo *siguiente //Apunta a otro nodo
+   
+   };
+
+Paso 1: Crear el espacio en memoria para almacenar un nodo
+Paso 2: Cargar el valor dentro del nodo(dato)
+Paso 3: Cargar el puntero pila dentro del nodo (*siguiente)
+Paso 4: Asignar el nuevo nodo a pila
+
+void agregarPila(Nodo *&pila, int n){
+    Nodo *nuevo_nodo = new Nodo();
+    nuevo_nodo->dato = n;
+    nuevo_nodo->siguiente = pila;
+    pila = nuevo_nodo
+}

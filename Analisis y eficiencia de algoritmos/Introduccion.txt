@@ -1,0 +1,11 @@
+Programa elegante:
+
+Diseño de algoritmos faciles de entender, codificar y depurar.
+Diseño de algoritmos que hagan un uso eficiente de los recursos
+de la computadora.
+
+*Eficiencia de un algoritmo*
+
+Propiedad mediante la cual un algoritmo debe alcanzar la solucion
+al problema en el tiempo mas corto posible y/o utilizando la
+cantidad más pequeña posible de recursos fisicos().

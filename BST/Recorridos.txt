@@ -1,0 +1,6 @@
+Recorridos de profundidiad
+
+PreOrder
+ 1. Visitar la raiz
+ 2. sub-arbol izquiero
+ 3. sub-arbol derecho

@@ -1,0 +1,64 @@
+# Estructuras
+
+## Que es
+
+Es una colección de uno o más tipos de elementos denominados campos, cada uno de lso cuales puede ser de un tipo de dato diferente.
+
+## Declaración de una estructura
+
+struct <nombreDeLaEstructura>{
+    
+    <tipoDato> <nombreDeCampo>
+    <tipoDato> <nombreDeCampo>
+    <tipoDato> <nombreDeCampo>
+        
+    ...
+  };
+                
+
+
+## Ejemplo
+
+struct coleccion_CD {
+    char titulo[30];
+    char artista[25];
+    int numCanciones;
+    float precio;
+    char fecha_compra;
+
+};
+        
+## Declarando variables srtut
+        
+Forma 1:
+        
+struct coleccion_CD {
+    char titulo[30];
+    char artista[25];
+    int numCanciones;
+    float precio;
+    char fecha_compra;
+
+};
+        
+int main (){
+   struct coleccion_CD CD1, CD2, CD3;
+}
+
+        
+        
+Forma 2:
+        
+struct coleccion_CD {
+    char titulo[30];
+    char artista[25];
+    int numCanciones;
+    float precio;
+    char fecha_compra;
+
+} CD1, CD2, CD3;
+        
+
+
+
+    

@@ -1,0 +1,15 @@
+Es una estructura dentro de otra
+
+struct info_dirección{
+    char direccion[30];
+    char ciudad[20];
+    char provincia[20];
+
+};
+
+
+struct empleado{
+    char nombre[40];
+    struct info_direccion dir_empleado; // Esrtuctura dentro de otra
+    double salario;
+};

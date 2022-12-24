@@ -1,0 +1,47 @@
+En general, el formato de la eficiencia se puede expresar mediante 
+una funcion:
+	f(n) = eficiencia
+
+La eficiencia del algoritmo se examina como una funcion del numero de
+elementos a ser procesados.
+
+
+*Bucles lineales*
+Un iterador que aumenta o disminuye la misma cantidad n veces.
+El numero de iteraciones es directamente proporcional al factor .
+del bucle.
+f(n) = n
+f(n) = n/2
+Entre otras
+
+Ejemplo
+
+i = 1;
+while(i < n){
+	i ++;
+}
+
+
+*Bucles algoritmicos*
+La variable de control se multiplica o divide dentro de dicho bucle.
+Mas rapidos que los bucles lineales
+
+f(n) = log2(n)
+
+Ejemplo:
+i = 1;
+while(i < 1000){
+	i *= 2;
+}
+
+
+*Bucles anidados*
+Multiplicando el numero de iteraciones del bucle interno por el bucle 
+externo.
+
+Tres tipos:
+	Lineal logaritmico: n log2(n)
+	Dependiente cuadrático: n(n + 1) / 2
+	Cuadratica: f(n) = n^2
+
+

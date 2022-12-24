@@ -1,0 +1,19 @@
+La medida de rendimiento de un programa se consigue mediante la
+complejidad del espacio y tiempo de un programa.
+
+La complejidad del espacio de un programa es la cantidad de memoria 
+que se necesita para ejecutar hasta la compleción.
+
+La complejidad de tiempo es al cantida de tiempo que se necesita para
+ejecutarse. T(n)
+
+Peor caso: Indica el peor tiempo que se puede tener. La maxima cantidad
+de iteraciones que puede dar tu algoritmo.
+
+Mejor caso: Mejor tiempo que podemos hacer.
+
+Caso medio: Tiempo medio de ejecución del programa. Promedio
+
+
+
+

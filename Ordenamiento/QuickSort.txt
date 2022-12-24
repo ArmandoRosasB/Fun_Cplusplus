@@ -1,0 +1,99 @@
+Método mas rápido, elegante, eficiente e interesante.
+    
+ El algoritmo divide los n elementos de al lista en dos particiones separadas por un elemento:
+ - Una partición izquierda
+ - Un elemento central (pivote)
+ - Una partición derecha
+ 
+ Los elementos en la partición izquierda son menores al pivote y los de la partición derecha son mayores al pivote.
+     
+
+Pasos: 
+    1. Seleccionar el elemento central a[] como pivote.
+    2. Dividir lso restantes elementos en particiones izquierdas y derecha.
+    3. Ordenar la partición izquierda utilizando quikSort
+    4. Ordenar la partición derecha utilizando quikSort
+    5. Juntar la partcición izquierda seguida de el pivote seguida de la partición derecha.
+        
+ Ejemplo:
+
+    int arreglo [] = {8,3,6,4,2,5,7,1};
+
+1. Obtenemos el pivote: 
+    central = (primero + último)/2
+    central = 3
+        
+    pivote = a[central] = 4.
+        
+ Se utilizará el i para los elementos de la partición izquierda y j para los de la derecha.
+        
+  {8,3,6,4,2,5,7,1}
+   i             j
+   
+   8 < 4 falso
+   1 > 4 falso
+   
+   Como no cumplen, intercambiamos
+   
+   i++
+   j--
+       
+       
+  {1,3,6,4,2,5,7,8}
+     i         j
+  
+  3 < 4 verdadero
+
+    i++
+         
+  {1,3,6,4,2,5,7,8}
+       i       j
+  
+  7>4 verdadero
+  
+  j++
+           
+  {1,3,6,4,2,5,7,8}
+       i     j
+ 
+ 5>4 verdadero
+ 
+ j++
+           
+           
+ {1,3,6,4,2,5,7,8}
+      i   j
+      
+  2>4 falso
+  
+  Intercambio a[i] por a[j]
+ 
+          
+  {1,3,2,4,6,5,7,8}
+         ij
+         
+ Si el i o el j se juntan o se cruzan, termina el ciclo.
+             
+         
+ Dividimos el arreglo en 2. El pivote se va con la parte que tenga menos elementos
+ 
+ Seguimos el mismo procedimietno con las dos partes.
+ 
+ {1,3,2,4}
+
+ {1,2,3,4}
+
+
+ {6,5,7,8}
+
+ {5,6,7,8}
+
+
+Juntamos:
+
+{1,2,3,4,5,6,7,8}
+          
+  
+  
+        
+

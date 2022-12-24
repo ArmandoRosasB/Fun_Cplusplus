@@ -1,0 +1,49 @@
+Numero de nodos con dos componentes, un enlace al siguiente
+nodo de la ista y un valor, que puede ser de cualquier tipo.
+
+Conjunto de nodos.
+
+Estrucutura de datos dinámica.
+
+
+Declaración del nodo
+
+struct Nodo {
+	int dato;
+	Nodo *siguiente;
+}
+
+
+Clasificación de listas enlazadas.
+
+1. Lista simplemente Enlazada.
+	Cada nodo contiene un único enlace, solo apunta 
+	al siguiente nodo.
+
+2. Listas Doblemente Enlazada.
+	Cada nodo contiene dos enlaces, uno que apunta al
+	nodo sucesor y otro que apunta al nodo predecesor.
+
+3. Lista Circular Simplemente Enlazada.
+	Lista Simplemente Enlazada donde el
+	nodo final apunta al primer nodo. Tail apunta a Head.	
+
+4. Lista Circular Doblemente Enlazada.
+	Lista doblemente enlazada en donde el primer y ultimo
+	elemento estan enlazados entre si. 
+
+
+Operaciones
+	Insertar elementos en una lsita enlazada.
+	Mostrar los elementos de una lista enlazada.
+	Buscar un elemento en una lista enlazada.
+	Eliminar elementos de una lista enlazada.
+
+
+
+***Insertar elementos en una lista***
+1. Crear un nuevo nodo	
+2. Asignar a nuevo_nodo->dato el elemento que queremos incluir en la lista.
+3. Crear dos nodos auxiliaries 
+4. Insertar el elemento en la lista.
+

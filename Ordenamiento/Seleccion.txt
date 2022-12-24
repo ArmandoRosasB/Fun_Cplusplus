@@ -1,0 +1,7 @@
+Funcionamiento:
+
+1. Buscar el mínimo elemento de la lista
+2. Intercambiar con el primer elemento
+3. Buscar el mínimo del resto de la lista
+4. Intercambiar con el segundo
+5. Y así sucesivamente

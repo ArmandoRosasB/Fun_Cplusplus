@@ -1,0 +1,12 @@
+Sentencias de asignacion: O(1)
+La complejidad de una sentencia de selección es el maximo de las
+complejidades del bloque if y del bloque else.
+
+La complejudad de uan sentencia de selección multiple (switch)
+es el máximo de las complejidades de cada uno de los bloques case.
+
+Complejidad de un bucle, condicional o automático:
+	Estimar el maximo numero de itereaciones para el peor caso.
+
+Complejidad de un bloque: Suma de als complejidades de cada 
+sentencia del bloque.

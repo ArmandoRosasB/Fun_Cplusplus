@@ -1,0 +1,43 @@
+Manera muy natural de ordenar para el ser humano, puede utilizarse facilmente para ordenar un mazo de cartas numeradas aleatoriamente.
+
+Requiere un total de  O(n^2) operaciones para ordenar una lista de n elementos
+
+Ejemplo:
+
+Si 
+    numero_izquierda > numero_actual
+        cambio
+
+int array [] = {5*, 3, 4, 1, 2};
+
+* Posición en la que estamos
+
+int array [] = {5, 3*, 4, 1, 2};
+
+Como 5 es mayor a 3 hacemos un cambio
+
+int array [] = {3, 5*, 4, 1, 2};
+
+    Ahora, aunque seguimos en la posicion [1] del arreglo, analizamos el numero que movemos
+
+int array [] = {3, 5*, 4, 1, 2};
+
+Como no hay numero a la izquierda del 3, entonces lo dejamos ahi y seguimos con el numero 4.
+
+int array [] = {3, 5, 4*, 1, 2};
+
+Como 5 es mayor que 4 cambiamos
+
+int array [] = {3, 4, 5*, 1, 2};
+
+Y como 3 no es mayor que 4, no lo cambiamos
+
+int array [] = {3, 4, 5, 1*, 2};
+int array [] = {3, 4, 1, 5*, 2};
+int array [] = {3, 1, 4, 5*, 2};
+int array [] = {1, 3, 4, 5*, 2};
+
+int array [] = {1, 2, 3, 4, 5*};
+
+
+

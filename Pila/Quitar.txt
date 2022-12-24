@@ -1,0 +1,44 @@
+Pasos para quitar un nodo
+
+1) Crear una variable *aux de tipo Nodo
+
+Nodo *aux = pila
+
+Como pila apunta a la cima de la pila, 
+aux tambien apuntara a la cima de la pila.
+
+
+2) Igualar el n a aux->dato
+
+n = aux->dato
+
+n apunta al valor del nodo en la cima de la pila
+
+
+3) Pasar pila al siguiente nodo
+
+pila = aux->siguiente
+
+pila apuntara a donde apunta el siguiente nodo, 
+mientras el aux apunta a al cima de la pila.
+
+4) Eliminar aux
+
+delete aux
+Eliminamos la cima, por lo que la pila seniala a la 
+nueva cima,, que es el siguiente nodo
+
+
+
+void sacarPila(Nodo *&pila, int &n){
+	Nodo *aux = pila;
+	n = aux->dato;
+	pila = aux->siguiente;
+	delete aux;
+}
+
+
+
+
+
+

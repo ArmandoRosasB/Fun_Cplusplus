@@ -1,0 +1,131 @@
+Una mejora al método de inserción directa. Se suele denominar ordenación por inserción con incrementos decrecientes.
+
+El algoritmo de Shell modifica los saltos contiguos por saltos de mayor tamaño y con ello consigue que la ordenación sea más rápida. Se toma como salto inicial n/2 (siendo n el numero de elementos), luego en cada iteración se reduce el salto a la mitad, hasta que el salto sea de tamaño 1.
+
+Pasos:
+1. Se divide la lista original en n/2 grupos de dos, considerando un incremento entre los elementos de n/2.
+
+2. Se clasifica cada grupo por separado, comparando las parejas de elementos y si no estan ordenados se intercambian.
+
+3. Se divide ahora la lista en la mitad de grupos(n/4), con un salto entre elementos de n/4, y nuevamente se clasifica cada grupo por separado. 
+
+4. Se hace así sucesivamente. 
+
+5. El algoritmo termina cuando el tamaño de salto es de 1.
+
+
+Ejemplo:
+
+int arreglo [] = {6, 1, 5, 2, 3, 4 , 0};
+
+Salto n/2 = 7/2 = 3
+
+{*6, 1, 5, *2, 3, 4 , 0}
+a[j]      a[k]
+
+Si (a[j] <= a[k]{
+    arreglo ordenado;
+} Sino{
+    Intercambio;
+}
+
+{2, *1, 5, 6, *3, 4 , 0}
+
+arreglo ordenado
+
+{2, 1, *5, 6, 3, *4 , 0}
+
+intercambio
+
+{2, 1, 4, *6, 3, 5 , *0}
+
+intercambio
+
+{2, 1, 4, *0, 3, 5 , *6}
+
+Como no todos estan ordenados en los saltos de 3, damos otra vuelta.
+
+{2*, 1, 4, *0, 3, 5 , 6}
+
+intercambio
+
+{0, 1*, 4, 2, 3*, 5 , 6}
+
+arreglo ordenado
+
+{0, 1, *4, 2, 3, *5 , 6}
+
+arreglo ordenado
+
+{0, 1, 4, *2, 3, 5 , *6}
+
+arreglo ordenado
+
+Como no todos estan ordenados en los saltos de 3, damos otra vuelta.
+
+{*0, 1, 4, *2, 3, 5 , 6}
+
+arreglo ordenado
+
+{0, *1, 4, 2, *3, 5 , 6}
+
+arreglo ordenado
+
+{0, 1, *4, 2, 3, *5 , 6}
+
+arreglo ordenado
+
+{0, 1, 4, *2, 3, 5 , *6}
+
+arreglo ordenado
+
+3/2 = 1
+
+{*0, *1, 4, 2, 3, 5 , 6}
+arreglo ordenado
+
+{0, *1, *4, 2, 3, 5 , 6}
+
+arreglo ordenado
+
+{0, 1, *4, *2, 3, 5 , 6}
+
+intercambio
+
+{0, 1, 2, *4, *3, 5 , 6}
+
+intercambio
+
+{0, 1, 2, 3, *4, *5 , 6}
+
+intercambio
+
+{0, 1, 2, 3, 4, *5 , *6}
+
+ARREGLO ORDENADO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

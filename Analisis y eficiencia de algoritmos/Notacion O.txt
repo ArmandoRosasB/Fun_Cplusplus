@@ -1,0 +1,39 @@
+Factor que determina la magnitud. 
+O grande: Esta e el orden de...
+
+Indica la cota superior del tiempo de ejecucion de un algoritmo.
+
+
+La notación O grande se puede obtener a partir de f(n) utilizando los
+siguientes pasos:
+1. En cada término, establecer el coeficiente del término en 1.
+2. Mantener el término mayor de la función y descartar los restantes.
+Los términos se ordenan de menor a mayor.
+
+
+Orden de eficiencia: Mejor a mayor
+
+log2(n) -> n -> n log2(n) -> n^2 -> n^k -> 2^n -> n!
+
+Propiedades:
+	Siendo c una constante c * O(f(n)) = O(f(n))
+
+`	O(f(n)) + O(g(n)) = O(f(n) + g(n))
+
+	Maximo(O(f(n)), O(g(n))) = O(Maximo(f(n), g(n)))
+
+	O(f(n)) * O(g(n)) = O(f(n) * g(n))
+
+	O(loga(n)) == O(logb(n)) para a, b > 1
+
+	O(log n!) = O(n log(n))
+
+	O(sumatoria de i a n de i^k) = O(n^(k + 1))
+
+	O(sumatoria de i a n de log(i)) = O(n log(n))
+
+
+	
+
+
+
