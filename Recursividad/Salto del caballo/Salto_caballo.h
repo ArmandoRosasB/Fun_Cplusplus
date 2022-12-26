@@ -24,7 +24,7 @@ void saltoCaballo(int i, Coordenadas posicion, bool& succes){
 
     int k = 0; //Iterador para controlar los desplazamientos del caballo
     succes = false;
-    
+
     do{
         //Nuevas coordenadas del caballo al moverse
         new_pos.setCoordenates(posicion.getX() +  d[k][0],posicion.getY() +  d[k][1]);
