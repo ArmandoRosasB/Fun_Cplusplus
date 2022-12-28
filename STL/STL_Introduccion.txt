@@ -1,0 +1,58 @@
+La biblioteca presenta 3 componentes basicos:
+
+	- Contenedores: Estructuras de datos. Dinamicos y templates
+
+	- Iteradores: Objetos a traves de los cuales se puede acceder
+	a elementos del contenedor. Similar al concepto de un puntero.
+
+	- Algoritmos: Busqueda, ordenamiento, transformacion, matematicos, etc.
+
+
+*Contenedores*
+Pueden estar almacenados en forma contigua en la memoria o enlazados a traves
+de punteros.
+
+Lineales: List, Vector, Deque
+Asociativos: Map, Set, Multimap, MultiSet 
+
+Operaciones comunes
+
+contenedor<T> instancia;
+
+contenedor:: size();
+contenedor:: max_size(); Devuelve el tamanio maximo que puede alcanzar el
+				 contenedor antes de requerir mas memoria.
+contenedor:: empty();
+contenedor:: swap(T &a); Intercambia el contenido del contenedor con el que
+				recibe como parametro
+contenedor:: clear();   Elimina todos los elementos del contenedor
+
+Operaciones logicas entre contenedores del mismo tipo
+v == w, v != x, v <=w, etc
+
+
+*Iterador*
+Objeto que abstrae el proceso de moverse a traves de una secuencia.
+
+Syntaxis general:
+
+contenedor<T>:: iterator nombreIterador;
+
+Clasificacion:
+De que forma se mueven los iteradores a traves de los contenedores
+
+	-Forward iterators: Avanzan solamente hacia adelante secuencialmente
+	-Bidirectional iterators: Avanzan al elemento sigueinte o al anterior
+	-Random access iterator: Avanzar o retroceder mas de una posicion a
+					 la vez.
+
+Operaciones que se pueden realizar con los iteradores:
+	Forward: == != * ++ 
+	Bidirectional: == != * ++ --
+	Random: == != * ++ -- += -= + - < > <= >=
+
+* Algoritmos*
+
+Funciones template que operan sobre los contenedores a traves de los iteradores 
+de estos.
+	
