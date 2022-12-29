@@ -55,4 +55,25 @@ Operaciones que se pueden realizar con los iteradores:
 
 Funciones template que operan sobre los contenedores a traves de los iteradores 
 de estos.
+
+* Contenedores asociativos *
+
+Su estructura en memoria no es secuencial, sino que se implementan como arboles
+binarios de busqueda.
+
+Tiempo de busqueda: Proporcional al logaritmo base 2 de la cantidad de elementos.
+
+Mas eficientes en busqueda.
+
+Iteradores bidireccionales
+
+Contenedor:: insert(clave &x);
+Contenedor:: insert(contenedor:: iterator i, contenedor:: iterator f);
+Contenedor:: erase (clave &x);
+Contenedor:: erase(contenedor:: iterador p);
+Contenedor:: count(clave &x);
+Contenedor:: find(clave &x);
+Contenedor:: lower_bound(clave &x); Devuelve un iterador al primer elemento que tenga la clave
+Contenedor:: upper_bound(clave &x); Devuelve un iterador al elemento siguiente
+						al ultimo elemento  con la calve x.
 	
